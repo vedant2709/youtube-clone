@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { categories } from "../utils/constants";
 import { Stack } from "@mui/material";
 
 function Sidebar({selectedCategory,setSelectedCategory}) {
-
-  return (
+  
+  return (  
     <Stack
       direction={"row"}
       sx={{

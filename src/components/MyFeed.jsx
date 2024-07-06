@@ -5,7 +5,7 @@ import Videos from "./Videos";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 function MyFeed() {
-  const [selectedCategory, setSelectedCategory] = useState("Coding");
+  const [selectedCategory, setSelectedCategory] = useState("New");
   const [videos,setVideos]=useState([])
   useEffect(() => {
     fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
