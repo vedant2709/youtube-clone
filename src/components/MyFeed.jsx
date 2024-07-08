@@ -15,20 +15,19 @@ function MyFeed() {
     <Stack sx={{ flexDirection: { sx: "column", md: "row" } }}>
       <Box
         sx={{
-          height: { sx: "auto", md: "92vh" },
+          height: { sx: "auto", md: "90vh" },
           borderRight: "1px solid #3d3d3d",
           px: { sx: 0, md: 2 },
+          overflowY:"auto",
         }}
       >
         <Sidebar
           selectedCategory={selectedCategory}
           setSelectedCategory={setSelectedCategory}
         />
-        <Typography variant="body2" sx={{ color: "#fff" }}>
-          Copyright 2024
-        </Typography>
+        
       </Box>
-      <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
+      <Box p={2} sx={{ overflowY: "auto", maxHeight: "80vh", flex: 2 }}>
         <Typography
           variant="h4"
           fontWeight={"bold"}

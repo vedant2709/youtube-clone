@@ -18,16 +18,17 @@ function VideoCard({
   return (
     <Card
       sx={{
-        width: { xs: '100%', sm: '358px', md: "320px", },
+        width: { xs: '100%', sm: '300px', md: "330px", },
         boxShadow: "none",
         borderRadius: 0,
         outline: "none",
+        overflow:"hidden"
       }}
     >
       <Link to={videoId ? `/video/${videoId}  ` : demoVideoUrl}>
         <CardMedia
           image={snippet?.thumbnails?.high?.url}
-          sx={{ width: { xs: '100%', sm: '358px'}, height: 180 }} 
+          sx={{ width: { xs: '100%', sm: '100%'}, height: 180,overflow:"hidden",objectFit:"cover"}} 
         />
       </Link>
       <CardContent sx={{ backgroundColor: "#1e1e1e", height: "106px" }}>
